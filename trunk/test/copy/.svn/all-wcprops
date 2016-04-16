@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/1031/trunk/test/copy
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/1031/trunk/test/copy/Makefile
+END
+test_copy.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1031/trunk/test/copy/test_copy.h
+END
+test_copy.cu
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1031/trunk/test/copy/test_copy.cu
+END
+grid_size.cu
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1031/trunk/test/copy/grid_size.cu
+END
+compare_copy.cu
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1031/trunk/test/copy/compare_copy.cu
+END
+simple_copy.cu
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1031/trunk/test/copy/simple_copy.cu
+END
+run_tune_tests.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/711/trunk/test/copy/run_tune_tests.sh
+END
+tune_copy.cu
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1031/trunk/test/copy/tune_copy.cu
+END

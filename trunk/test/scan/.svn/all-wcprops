@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/1031/trunk/test/scan
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/1031/trunk/test/scan/Makefile
+END
+struct_scan.cu
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1031/trunk/test/scan/struct_scan.cu
+END
+compare_scan.cu
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1031/trunk/test/scan/compare_scan.cu
+END
+simple_scan.cu
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1031/trunk/test/scan/simple_scan.cu
+END
+grid_size.cu
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1031/trunk/test/scan/grid_size.cu
+END
+tune_scan.cu
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1031/trunk/test/scan/tune_scan.cu
+END
+test_scan.cu
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1031/trunk/test/scan/test_scan.cu
+END
+test_scan.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1031/trunk/test/scan/test_scan.h
+END
+run_tune_tests.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/721/trunk/test/scan/run_tune_tests.sh
+END

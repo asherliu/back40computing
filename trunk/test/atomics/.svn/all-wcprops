@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/1031/trunk/test/atomics
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1031/trunk/test/atomics/Makefile
+END
+test_atomic.cu
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1031/trunk/test/atomics/test_atomic.cu
+END
