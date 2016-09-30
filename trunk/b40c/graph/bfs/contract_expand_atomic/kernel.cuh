@@ -274,7 +274,9 @@ struct Dispatch<KernelPolicy, true>
 	typedef typename KernelPolicy::VertexId VertexId;
 	typedef typename KernelPolicy::SizeT SizeT;
 	typedef typename KernelPolicy::VisitedMask VisitedMask;
+	
 
+	//Hang Liu: fused iteration kernel entry point
 	/**
 	 * fused-iteration functionality
 	 */
@@ -392,6 +394,7 @@ struct Dispatch<KernelPolicy, true>
 		}
 
 		global_barrier.Sync();
+		
 
 		while (true) {
 
@@ -555,7 +558,7 @@ struct Dispatch<KernelPolicy, true>
 
 
 	/**
-	 * Normal kernel functionality
+	 * Hang Liu: Normal kernel functionality
 	 */
 	static __device__ __forceinline__ void Kernel(
 		VertexId 						&iteration,

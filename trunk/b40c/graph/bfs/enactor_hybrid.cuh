@@ -264,7 +264,8 @@ public:
     		0.0;
     }
 
-
+	
+	//Hang Liu, Calling kernels from here.
 	/**
 	 * Enacts a breadth-first-search on the specified graph problem.
 	 *
@@ -336,6 +337,9 @@ public:
 
 				VertexId one_phase_iteration = iteration;
 
+		//added by Hang
+ printf("my blk: %d thd: %d\n", fused_grid_size, OnePhasePolicy::THREADS);
+//ended added by Hang
 				// Run fused contract-expand kernel
 				contract_expand_atomic::KernelGlobalBarrier<OnePhasePolicy>
 					<<<fused_grid_size, OnePhasePolicy::THREADS>>>(

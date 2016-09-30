@@ -130,7 +130,8 @@ void TimedSort(
 	sorting_enactor.ENACTOR_DEBUG = true;
 	sorting_enactor.template Sort<GENRE>(device_storage, num_elements, g_max_ctas);
 	sorting_enactor.ENACTOR_DEBUG = false;
-
+	
+	printf("We get here\n\n\n\n");
 	// Perform the timed number of sorting g_iterations
 	GpuTimer timer;
 
@@ -318,6 +319,7 @@ int main(int argc, char** argv)
 */
 
 	TestSort<unsigned int, unsigned int>(num_elements);
+	//TestSort<unsigned long long, unsigned long long>(num_elements);
 
 }
 

@@ -42,12 +42,13 @@ OSUPPER = $(shell uname -s 2>/dev/null | tr [:lower:] [:upper:])
 # Gen targets
 #-------------------------------------------------------------------------------
 
+GEN_SM35 = -gencode=arch=compute_35,code=\"sm_35,compute_35\" 
 GEN_SM20 = -gencode=arch=compute_20,code=\"sm_20,compute_20\" 
 GEN_SM13 = -gencode=arch=compute_13,code=\"sm_13,compute_13\" 
 GEN_SM11 = -gencode=arch=compute_11,code=\"sm_11,compute_11\" 
 GEN_SM10 = -gencode=arch=compute_10,code=\"sm_10,compute_10\" 
 #SM_TARGETS = $(GEN_SM20) $(GEN_SM13) $(GEN_SM10)
-SM_TARGETS = $(GEN_SM20)
+SM_TARGETS = $(GEN_SM35)
 
 #-------------------------------------------------------------------------------
 # Tune arch
@@ -142,6 +143,8 @@ ifeq (4.1, $(findstring 4.1, $(NVCC_VERSION)))
 	NVCCFLAGS += -open64
 endif 
 
+#echo "$(DEFINES) $(SM_TARGETS) $(NVCCFLAGS) $(ARCH) $(INC)"
+
 #-------------------------------------------------------------------------------
 # Dependency Lists
 #-------------------------------------------------------------------------------
@@ -176,7 +179,6 @@ bin/simple_sort_$(NVCC_VERSION)_$(ARCH_SUFFIX) : simple_sort.cu $(DEPS)
 #-------------------------------------------------------------------------------
 
 test: bin/test_sort_$(NVCC_VERSION)_$(ARCH_SUFFIX)
-
 bin/test_sort_$(NVCC_VERSION)_$(ARCH_SUFFIX) : test_sort.cu $(DEPS)
 	mkdir -p bin
 	$(NVCC) $(DEFINES) $(SM_TARGETS) -o bin/test_sort_$(NVCC_VERSION)_$(ARCH_SUFFIX) test_sort.cu $(NVCCFLAGS) $(ARCH) $(INC) -O3  
