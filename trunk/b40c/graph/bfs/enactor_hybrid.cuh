@@ -404,7 +404,7 @@ public:
 				while (done[0] < 0) {
 
 					if (DEBUG) printf("\n%lld", (long long) iteration);
-
+					printf("HL-did-a-two-phase\n");
 					//
 					// Filter
 					//

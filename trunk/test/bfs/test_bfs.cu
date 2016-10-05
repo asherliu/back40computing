@@ -33,6 +33,7 @@
  * Useful for demonstrating how to integrate BFS traversal into your 
  * application. 
  ******************************************************************************/
+#include "wtime.h"
 
 #include <stdio.h> 
 #include <string>
@@ -683,7 +684,9 @@ void RunTests(
 
 			// Perform BFS
 			GpuTimer gpu_timer;
-
+			
+			//Hang
+			double hl_time = wtime();
 			switch (strategy) {
 
 			case EXPAND_CONTRACT:
@@ -731,6 +734,11 @@ void RunTests(
 			if (retval && (retval != cudaErrorInvalidDeviceFunction)) {
 				exit(1);
 			}
+				
+			//HangLiu
+			hl_time = wtime() - hl_time;
+			printf("HL-elapsedTime: %lf\n", hl_time);
+
 
 			float elapsed = gpu_timer.ElapsedMillis();
 

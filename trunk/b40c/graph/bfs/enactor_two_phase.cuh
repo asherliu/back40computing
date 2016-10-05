@@ -463,6 +463,7 @@ public:
 
 			// Step through BFS iterations
 			while (done[0] < 0) {
+				printf("HL: here\n");
 
 				//
 				// Contraction

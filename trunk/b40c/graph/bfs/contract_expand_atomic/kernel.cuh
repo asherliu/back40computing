@@ -386,6 +386,7 @@ struct Dispatch<KernelPolicy, true>
 			smem_storage);
 
 		iteration++;
+		
 		queue_index++;
 		steal_index++;
 
